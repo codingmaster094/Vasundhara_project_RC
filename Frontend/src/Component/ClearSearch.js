@@ -4,7 +4,8 @@ import { Outlet } from "react-router-dom";
 
 
 const ClearSearch = (props)=>{
-    console.log(props.search,"prop");
+    console.log(props.search,"prop")
+    
     const {search,setSearch} = useContext(AuthContext)
     const [loading,setLoadnig] = useState(true)
     const clearFunc = () => {
