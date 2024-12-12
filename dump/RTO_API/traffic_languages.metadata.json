@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"12c0962cef8440028b4853741e9042d2","collectionName":"traffic_languages","type":"collection"}

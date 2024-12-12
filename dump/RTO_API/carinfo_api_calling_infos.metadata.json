@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"ca13fd499d984cc3b3123a43739adb62","collectionName":"carinfo_api_calling_infos","type":"collection"}

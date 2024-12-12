@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"4dcd88c4153a4dd68e0e2ec8fa631c8a","collectionName":"fuel_citys","type":"collection"}

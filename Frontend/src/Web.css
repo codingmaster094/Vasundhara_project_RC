@@ -1,0 +1,435 @@
+/* *-----------------------------------------------------------------------------------
+    CSS INDEX
+    ===================
+    1. Default
+    2. Sidebar
+    3. Header
+    4. Menu Button
+    5. Footer
+    6. Main Content
+    7. Page Heading
+    8. Avatar
+    9. Card
+    10. Table
+    11. Forms
+    12. Button
+    13. Switch Button 1
+    14. Modal
+    15. Login Screen
+    16. Pagination
+    17. Page Not Found
+    18. Loader
+    19. Sweet Alert
+    20. React Switch
+    21. Darkmode
+/*--------------------------------------------------------------
+    1. Default
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap');
+* {
+    outline-color: transparent;
+    outline-style: none;
+}
+body {
+    font-family: 'Maven Pro', sans-serif;
+    color: var(--dark);
+    font-size: 15px;
+    background-color: var(--light);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 6px !important;
+    height: 6px !important;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent !important;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--gray);
+    border-radius: .325rem;
+}
+.webpage ::selection {
+    color: var(--font-white);
+    background-color: var(--purple);
+}
+.webpage ::-moz-selection {
+    color: var(--font-white);
+    background-color: var(--purple);
+}
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+a:hover, a:focus{
+    text-decoration: none;
+}
+.webpage a:hover {
+    color: var(--purple);
+}
+a:-webkit-any-link:focus-visible {
+    outline-offset: 0;
+}
+a:-webkit-any-link:focus-visible {
+    outline-offset: unset;
+}
+select {
+    background-color: var(--light) !important;
+}
+.dropdown-item{
+    font-weight: 500;
+    color: var(--dark);
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: var(--dark);
+    background-color: var(--light);
+}
+button:focus,
+.btn-close:focus,
+.btn:focus-visible,
+.btn:focus {
+    outline: 0;
+    box-shadow: unset;
+}
+:focus-visible {
+    outline: unset;
+}
+
+:focus-visible {
+    outline: 0;
+}
+:-webkit-direct-focus {
+    outline-color: unset;
+    outline-style: unset;
+    outline-width: 0 !important;
+}
+:focus {
+    outline-color: unset;
+    outline-style: unset;
+    outline-width: 0;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--dark);
+    background-color: var(--light);
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-box-shadow: unset !important;
+}
+.form-control::-webkit-input-placeholder,
+input[type=text]::-webkit-input-placeholder,
+input[type=password]::-webkit-input-placeholder,
+input[type=datetime]::-webkit-input-placeholder,
+input[type=datetime-local]::-webkit-input-placeholder,
+input[type=date]::-webkit-input-placeholder,
+input[type=month]::-webkit-input-placeholder,
+input[type=time]::-webkit-input-placeholder,
+input[type=week]::-webkit-input-placeholder,
+input[type=number]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder,
+input[type=url]::-webkit-input-placeholder,
+input[type=search]::-webkit-input-placeholder,
+input[type=tel]::-webkit-input-placeholder,
+input[type=color]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #bdbdbd
+}
+html.dark .form-control::-webkit-input-placeholder,
+html.dark input[type=text]::-webkit-input-placeholder,
+html.dark input[type=password]::-webkit-input-placeholder,
+html.dark input[type=datetime]::-webkit-input-placeholder,
+html.dark input[type=datetime-local]::-webkit-input-placeholder,
+html.dark input[type=date]::-webkit-input-placeholder,
+html.dark input[type=month]::-webkit-input-placeholder,
+html.dark input[type=time]::-webkit-input-placeholder,
+html.dark input[type=week]::-webkit-input-placeholder,
+html.dark input[type=number]::-webkit-input-placeholder,
+html.dark input[type=email]::-webkit-input-placeholder,
+html.dark input[type=url]::-webkit-input-placeholder,
+html.dark input[type=search]::-webkit-input-placeholder,
+html.dark input[type=tel]::-webkit-input-placeholder,
+html.dark input[type=color]::-webkit-input-placeholder,
+html.dark textarea::-webkit-input-placeholder {
+     color: #444444
+}
+.btn-primary.purple {
+    --bs-btn-color: var(--font-white);
+    --bs-btn-bg: var(--purple);
+    --bs-btn-border-color: var(--purple);
+    --bs-btn-hover-color: var(--font-white);
+    --bs-btn-hover-bg: var(--purple);
+    --bs-btn-hover-border-color: var(--purple);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--font-white);
+    --bs-btn-active-bg: var(--purple);
+    --bs-btn-active-border-color: var(--purple);
+    --bs-btn-active-shadow: unset;
+    --bs-btn-disabled-color: var(--font-white);
+    --bs-btn-disabled-bg: var(--purple);
+    --bs-btn-disabled-border-color: var(--purple);
+}
+.btn-primary.purple.btn-large {
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+    font-size: 1.05rem;
+    border-radius: 0.625rem;
+}
+.btn.purple.active:focus, .btn.purple.show:focus, .btn.purple:active:focus {
+    box-shadow: unset !important;
+}
+@media (max-width:399px) {
+    .btn-primary.purple.btn-large {
+        font-size: 1rem;
+    }
+}
+/*--------------------------------------------------------------
+    16. Download Life
+--------------------------------------------------------------*/
+.downloadlife .card{
+    margin-top: 1rem;
+}
+.downloadlife .card-body{
+    padding: 3rem 2rem;
+}
+.downloadlife .downloadlife-header{
+    text-align: center;
+}
+.downloadlife .downloadlife-header img{
+    max-width: 100%;
+    height: 40px;
+    margin: 0 auto;
+}
+.downloadlife .downloadlife-header h1{
+    font-size: 26px;
+    font-weight: 700;
+    margin: 3rem 0;
+    padding-bottom: 2rem ;
+    border-bottom: 1px solid var(--border);
+}
+.downloadlife .downloadlife-header h1 span{
+    color: var(--purple);
+}
+.downloadlife .downloadlife-body .minilogo{
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: .625rem;
+}
+.downloadlife .downloadlife-body .title{
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin:1.5rem 0 3rem;
+}
+.downloadlife .downloadlife-body .list .list-item{
+    display: flex;
+    align-items: center;
+}
+.downloadlife .downloadlife-body .list .list-item .list-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 40px;
+    background-color: #8652ff1a;
+    border-radius: 0.625rem;
+}
+.downloadlife .downloadlife-body .list .list-item .list-img i{
+    font-size: 20px;
+}
+.downloadlife .downloadlife-body .list .list-item .list-content{
+    margin-left: .75rem;
+}
+.downloadlife .downloadlife-body .list .list-item .list-content p{
+    margin: 0;
+    font-weight: 500;
+    color: var(--gray);
+}
+@media (max-width: 991px) {
+    .downloadlife .downloadlife-body .list .list-item{
+        margin: 0.5rem 0;
+    }
+}
+@media (max-width: 767px) {
+
+}
+@media (max-width: 575px) {
+    .downloadlife .card-body {
+        padding: 2rem 1.5rem;
+    }
+    .downloadlife .downloadlife-header h1 {
+        font-size: 24px;
+        margin: 2rem 0;
+        padding-bottom: 1.5rem;
+    }
+    .downloadlife .downloadlife-body .title {
+        font-size: 22px;
+        margin: 1.5rem 0 1.5rem;
+    }
+}
+@media (max-width:399px) {
+    .downloadlife .card-body {
+        padding: 1.5rem;
+    }
+    .downloadlife .downloadlife-header h1,
+    .downloadlife .downloadlife-body .title {
+        font-size: 20px;
+    }
+    .downloadlife .downloadlife-body .col-10{
+        width: 100%;
+    }
+}
+@media (max-width:319px) {
+    .downloadlife .card-body {
+        padding: 1rem;
+    }
+    .downloadlife .downloadlife-header h1,
+    .downloadlife .downloadlife-body .title {
+        font-size: 18px;
+    }
+    .downloadlife .downloadlife-body .col-10{
+        width: 100%;
+    }
+}
+
+.youcanaddme .youcanaddme-body{
+    text-align: center;
+}
+.youcanaddme .youcanaddme-body img{
+    max-width: 100%;
+    height: 300px;
+    margin: 4rem 0 2rem;
+}
+.youcanaddme .youcanaddme-body h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.youcanaddme .youcanaddme-body h2 span{
+    color: var(--purple);
+}
+.youcanaddme .youcanaddme-body p{
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--gray);
+}
+@media (max-width: 575px) {
+    .youcanaddme .youcanaddme-body h2 {
+        font-size: 26px;
+    }
+}
+@media (max-width:399px) {
+    .youcanaddme .youcanaddme-body h2 {
+        font-size: 24px;
+    }
+    .youcanaddme .youcanaddme-body p{
+        margin-bottom: 0;
+    }
+    .youcanaddme .youcanaddme-body .btn-primary.purple.btn-large.px-5{
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+@media (max-width:319px) {
+    .youcanaddme .youcanaddme-body h2 {
+        font-size: 22px;
+    }
+}
+
+.forgotpassword .forgotpassword-body{
+    text-align: center;
+}
+.forgotpassword .forgotpassword-body i{
+    min-width: 60px;
+    min-height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    background-color: #8652ff1a;
+    border-radius: 0.625rem;
+    margin: 4rem 0 2rem;
+    color: var(--purple);
+}
+.forgotpassword .forgotpassword-body h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+.forgotpassword .forgotpassword-body p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: var(--gray);
+}
+@media (max-width: 575px) {
+    .forgotpassword .forgotpassword-body h2 {
+        font-size: 26px;
+    }
+}
+@media (max-width:399px) {
+    .forgotpassword .forgotpassword-body h2 {
+        font-size: 24px;
+    }
+    .forgotpassword .forgotpassword-body p{
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width:319px) {
+    .forgotpassword .forgotpassword-body h2 {
+        font-size: 22px;
+    }
+}
+
+
+
+.invitecode .invitecode-body{
+    text-align: center;
+}
+.invitecode .invitecode-body i{
+    min-width: 60px;
+    min-height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    background-color: #8652ff1a;
+    border-radius: 0.625rem;
+    margin: 4rem 0 2rem;
+    color: var(--purple);
+}
+.invitecode .invitecode-body h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+.invitecode .invitecode-body p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: var(--gray);
+}
+.invitecode .invitecode-body h5{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+@media (max-width: 575px) {
+    .invitecode .invitecode-body h2 {
+        font-size: 26px;
+    }
+}
+@media (max-width:399px) {
+    .invitecode .invitecode-body h2 {
+        font-size: 24px;
+    }
+    .invitecode .invitecode-body p{
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width:319px) {
+    .invitecode .invitecode-body h2 {
+        font-size: 22px;
+    }
+}

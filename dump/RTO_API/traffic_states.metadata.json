@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"9a98ce8385744986860157c96b299007","collectionName":"traffic_states","type":"collection"}
